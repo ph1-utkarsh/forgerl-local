@@ -1,0 +1,6 @@
+{
+  "adapter_run": "EXP-FRL-011",
+  "decoding": "greedy",
+  "max_tokens": 384,
+  "paid_spend": 0
+}

@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "losses_before_update": [
+    7.108758449554443,
+    6.837790489196777,
+    5.321704864501953,
+    3.4988865852355957,
+    2.215095043182373
+  ],
+  "final_loss": 2.2119929790496826,
+  "zero_init_max_logit_error": 0.0,
+  "reload_max_logit_error": 0.0,
+  "frozen_base_unchanged": true,
+  "changed_adapter_tensors": [
+    "model.layers.35.self_attn.q_proj.lora_a",
+    "model.layers.35.self_attn.q_proj.lora_b",
+    "model.layers.35.self_attn.v_proj.lora_a",
+    "model.layers.35.self_attn.v_proj.lora_b"
+  ],
+  "trainable_parameters": 40960,
+  "sequence_tokens": 37,
+  "step_seconds": [
+    4.2039204590255395,
+    3.218032167002093,
+    2.051674541027751,
+    1.171745750005357,
+    0.5255227499874309
+  ],
+  "peak_training_memory_bytes": 10754375304,
+  "total_seconds": 90.27882283303188,
+  "adapter_sha256": "8a026f16d0a75a7ab54118cc5123bd71f321eb1318877d095ab5ec0078c34875",
+  "paid_spend": 0,
+  "interpretation": "one-example SFT mechanics only; no capability/generalization claim"
+}

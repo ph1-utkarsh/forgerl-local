@@ -1,0 +1,22 @@
+{
+  "task": "merge",
+  "buggy": {
+    "passed": false,
+    "checks_passed": 0,
+    "checks_total": 1,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": {\"x\": {\"a\": 3}, \"z\": [], \"q\": []}, \"mutated\": false, \"alias\": true}]\n",
+    "seconds": 0.2581607920000002
+  },
+  "oracle": {
+    "passed": true,
+    "checks_passed": 2,
+    "checks_total": 2,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": {\"x\": 2}, \"mutated\": false, \"alias\": false}, {\"value\": {\"x\": {\"a\": 3, \"b\": 2}, \"z\": [], \"q\": []}, \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.2744012910000002
+  },
+  "success": true
+}

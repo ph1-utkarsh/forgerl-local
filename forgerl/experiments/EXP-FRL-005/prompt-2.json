@@ -1,0 +1,89 @@
+{
+  "question": "Return exactly the lowercase word hello.",
+  "prompt": "<|im_start|>user\nReturn exactly the lowercase word hello.<|im_end|>\n<|im_start|>assistant\n",
+  "ollama": {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "created_at": "2026-09-20T15:31:46.274784Z",
+    "response": "hello",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 975739291,
+    "load_duration": 845844333,
+    "prompt_eval_count": 15,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 100204000,
+    "eval_count": 2,
+    "eval_duration": 27202000,
+    "logprobs": [
+      {
+        "token": "hello",
+        "logprob": -1.1920928955078125e-07,
+        "bytes": [
+          104,
+          101,
+          108,
+          108,
+          111
+        ],
+        "top_logprobs": [
+          {
+            "token": "hello",
+            "logprob": -1.1920928955078125e-07,
+            "bytes": [
+              104,
+              101,
+              108,
+              108,
+              111
+            ]
+          },
+          {
+            "token": " hello",
+            "logprob": -16.145742416381836,
+            "bytes": [
+              32,
+              104,
+              101,
+              108,
+              108,
+              111
+            ]
+          },
+          {
+            "token": "hell",
+            "logprob": -17.067426681518555,
+            "bytes": [
+              104,
+              101,
+              108,
+              108
+            ]
+          },
+          {
+            "token": "hel",
+            "logprob": -18.675369262695312,
+            "bytes": [
+              104,
+              101,
+              108
+            ]
+          },
+          {
+            "token": "Hello",
+            "logprob": -19.663204193115234,
+            "bytes": [
+              72,
+              101,
+              108,
+              108,
+              111
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mlx": "hello",
+  "mlx_seconds": 1.3772351669613272,
+  "exact_text_match": true
+}

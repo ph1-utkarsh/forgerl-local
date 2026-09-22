@@ -1,0 +1,16 @@
+{
+  "task": "chunks",
+  "seed": 2,
+  "original_artifact_sha256": "19f3993d7ec2b8c476ec065967b7cfd90ef0841f8d9bd13f7456154f792c4a71",
+  "original_success": false,
+  "hidden": {
+    "passed": false,
+    "checks_passed": 3,
+    "checks_total": 4,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": [[1, 2]], \"mutated\": false, \"alias\": false}, {\"value\": [], \"mutated\": false, \"alias\": false}, {\"raises\": \"ValueError\", \"mutated\": false}, {\"raises\": \"ValueError\", \"mutated\": false}]\n",
+    "seconds": 0.25751337499999993
+  },
+  "success": false
+}

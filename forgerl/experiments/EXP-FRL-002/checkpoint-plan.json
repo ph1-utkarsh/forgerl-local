@@ -1,0 +1,103 @@
+{
+  "repository": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "revision": "50d427756c6b1b2fe0c0a10f67fbda1fc8e82c1b",
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "size": 707,
+      "lfs_sha256": null
+    },
+    {
+      "name": "chat_template.jinja",
+      "size": 4040,
+      "lfs_sha256": null
+    },
+    {
+      "name": "config.json",
+      "size": 938,
+      "lfs_sha256": null
+    },
+    {
+      "name": "generation_config.json",
+      "size": 238,
+      "lfs_sha256": null
+    },
+    {
+      "name": "merges.txt",
+      "size": 1671853,
+      "lfs_sha256": null
+    },
+    {
+      "name": "model.safetensors",
+      "size": 2263022417,
+      "lfs_sha256": "2a73c6c248601ab904e035548abd8e6abb65ea27dcb5f342fb0a8910eb44173f"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 63964,
+      "lfs_sha256": null
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 613,
+      "lfs_sha256": null
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 11422654,
+      "lfs_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 5440,
+      "lfs_sha256": null
+    },
+    {
+      "name": "vocab.json",
+      "size": 2776833,
+      "lfs_sha256": null
+    }
+  ],
+  "known_download_bytes": 2278969697,
+  "config": {
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "eos_token_id": 151645,
+    "head_dim": 128,
+    "hidden_act": "silu",
+    "hidden_size": 2560,
+    "initializer_range": 0.02,
+    "intermediate_size": 9728,
+    "max_position_embeddings": 262144,
+    "max_window_layers": 36,
+    "model_type": "qwen3",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "quantization": {
+      "group_size": 64,
+      "bits": 4
+    },
+    "quantization_config": {
+      "group_size": 64,
+      "bits": 4
+    },
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": null,
+    "rope_theta": 5000000,
+    "sliding_window": null,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.51.0",
+    "use_cache": true,
+    "use_sliding_window": false,
+    "vocab_size": 151936
+  },
+  "weights_downloaded": false,
+  "paid_spend": 0,
+  "purpose": "candidate local adapter-training representation; not identical to Ollama GGUF quantization"
+}

@@ -1,0 +1,15 @@
+{
+  "mode": "controls",
+  "run_id": "EXP-FRL-000",
+  "seeds": "0,1,2",
+  "limit": 6,
+  "max_steps": 8,
+  "image": "sha256:229a2c5bfa27522db7815ea81f9bed70af17ccb9de9fc7ad142b1877b5830d36",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_hashes": {
+    "runner.py": "0313f7c6dc6e1de076a5fa17ed1e43c93e65f8c9d05f6231aedc9eddbf1e26f7",
+    "qualification.py": "6611f9bb33eec62e19b8d83858c1b43826300f45c193560e65df7ace3c252ecf"
+  }
+}

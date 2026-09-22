@@ -1,0 +1,18 @@
+{
+  "task": "ledger",
+  "buggy": {
+    "passed": false,
+    "returncode": 1,
+    "reason": null,
+    "output": "Traceback (most recent call last):\n  File \"/work/grade.py\", line 2, in <module>\n    assert debit(10,10)==0\n           ^^^^^^^^^^^^\n  File \"/work/solution.py\", line 3, in debit\n    raise ValueError('insufficient funds')\nValueError: insufficient funds\n",
+    "seconds": 0.22861666700000027
+  },
+  "oracle": {
+    "passed": true,
+    "returncode": 0,
+    "reason": null,
+    "output": "",
+    "seconds": 0.2271494999999999
+  },
+  "success": true
+}

@@ -1,0 +1,16 @@
+{
+  "task": "unique",
+  "seed": 2,
+  "original_artifact_sha256": "fd625fa95b195372010091b8839cdd46a51cb40e7ff359150c53aeed6619ce60",
+  "original_success": false,
+  "hidden": {
+    "passed": false,
+    "checks_passed": 1,
+    "checks_total": 2,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"raises\": \"TypeError\", \"mutated\": false}, {\"value\": [3, 1, 2], \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.2587749170000002
+  },
+  "success": false
+}

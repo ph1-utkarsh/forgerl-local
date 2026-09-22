@@ -1,0 +1,22 @@
+{
+  "task": "chunks",
+  "buggy": {
+    "passed": false,
+    "checks_passed": 2,
+    "checks_total": 4,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": [[1, 2]], \"mutated\": false, \"alias\": false}, {\"value\": [], \"mutated\": false, \"alias\": false}, {\"value\": [], \"mutated\": false, \"alias\": false}, {\"raises\": \"ValueError\", \"mutated\": false}]\n",
+    "seconds": 0.27311645800000006
+  },
+  "oracle": {
+    "passed": true,
+    "checks_passed": 5,
+    "checks_total": 5,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": [[1, 2], [3, 4]], \"mutated\": false, \"alias\": false}, {\"value\": [[1, 2], [3]], \"mutated\": false, \"alias\": false}, {\"value\": [], \"mutated\": false, \"alias\": false}, {\"raises\": \"ValueError\", \"mutated\": false}, {\"raises\": \"ValueError\", \"mutated\": false}]\n",
+    "seconds": 0.2712376249999999
+  },
+  "success": true
+}

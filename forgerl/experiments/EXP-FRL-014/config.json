@@ -1,0 +1,8 @@
+{
+  "objective": "grpo",
+  "steps": 10,
+  "beta": 0.2,
+  "clip": 0.2,
+  "source_sha256": "85e4a5b7b8ef0e48af0e8658f5aaab9c2324c76c1641493f4d1e25fce54b18b9",
+  "paid_spend": 0
+}

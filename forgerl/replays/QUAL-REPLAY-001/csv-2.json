@@ -1,0 +1,16 @@
+{
+  "task": "csv",
+  "seed": 2,
+  "original_artifact_sha256": "e0eb487f45de895e9cf6895b7c9490831925423692758cfbc8a4d1b90b0df883",
+  "original_success": false,
+  "hidden": {
+    "passed": false,
+    "checks_passed": 0,
+    "checks_total": 3,
+    "returncode": 1,
+    "reason": "invalid_worker_response",
+    "output": "Traceback (most recent call last):\n  File \"/work/worker.py\", line 33, in <module>\n    main()\n  File \"/work/worker.py\", line 18, in main\n    module = importlib.import_module(\"solution\")\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/importlib/__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1133, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1063, in source_to_code\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/work/solution.py\", line 11\n    elif text[i] == \\\" and (not in_quotes or (in_quotes and i > 0 and text[i-1] != \\\"): \n                     ^\nSyntaxError: unexpected character after line continuation character\n",
+    "seconds": 0.254563042
+  },
+  "success": false
+}

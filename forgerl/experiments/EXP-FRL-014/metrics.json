@@ -1,0 +1,30 @@
+{
+  "objective": "grpo",
+  "losses": [
+    -4.172325134277344e-07,
+    -0.011884838342666626,
+    -0.05955621600151062,
+    -0.09030064940452576,
+    -0.17750301957130432,
+    -0.20000001788139343,
+    -0.20000001788139343,
+    -0.20000001788139343,
+    -0.17470857501029968,
+    -0.12837740778923035
+  ],
+  "reference_margin": 0.38203132152557373,
+  "final_margin": 1.2197569608688354,
+  "reload_margin": 1.2197569608688354,
+  "margin_improved": true,
+  "changed_adapter_tensors": [
+    "model.layers.35.self_attn.q_proj.lora_a",
+    "model.layers.35.self_attn.q_proj.lora_b",
+    "model.layers.35.self_attn.v_proj.lora_a",
+    "model.layers.35.self_attn.v_proj.lora_b"
+  ],
+  "frozen_base_unchanged": true,
+  "trainable_parameters": 40960,
+  "total_seconds": 341.8273926670008,
+  "paid_spend": 0,
+  "interpretation": "one preference pair mechanics; no capability claim"
+}

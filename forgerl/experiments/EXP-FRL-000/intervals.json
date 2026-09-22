@@ -1,0 +1,18 @@
+{
+  "task": "intervals",
+  "buggy": {
+    "passed": false,
+    "returncode": 1,
+    "reason": null,
+    "output": "Traceback (most recent call last):\n  File \"/work/grade.py\", line 2, in <module>\n    assert not contains(1, 4, 4)\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.462383792
+  },
+  "oracle": {
+    "passed": true,
+    "returncode": 0,
+    "reason": null,
+    "output": "",
+    "seconds": 0.23324008399999996
+  },
+  "success": true
+}

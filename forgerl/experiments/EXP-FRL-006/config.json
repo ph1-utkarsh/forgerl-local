@@ -1,0 +1,42 @@
+{
+  "checkpoint": "installed Ollama Qwen3-4B-Instruct-2507 Q4_K_M decoded to FP16 by MLX",
+  "revision": "85e4a5b7b8ef0e48af0e8658f5aaab9c2324c76c1641493f4d1e25fce54b18b9",
+  "seed": 0,
+  "steps": 5,
+  "learning_rate": 0.001,
+  "adapter": {
+    "fine_tune_type": "lora",
+    "num_layers": 1,
+    "lora_parameters": {
+      "rank": 4,
+      "scale": 4.0,
+      "dropout": 0.0,
+      "keys": [
+        "self_attn.q_proj",
+        "self_attn.v_proj"
+      ]
+    }
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "Return the JSON action to list the repository files."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"action\":\"list\",\"path\":\"solution.py\",\"content\":\"\"}"
+    }
+  ],
+  "purpose": "training-mechanics qualification only; no research fixtures used",
+  "versions": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.17.0"
+  },
+  "memory_limit_bytes": 10737418240,
+  "paid_spend": 0,
+  "source_format": "gguf",
+  "script_sha256": "47d6d77f1e4cbf33b168167b33a9c9620f9d0dea8b9f3a70c2c43fe72625e6a5",
+  "objective_sha256": "6532b29138962c6455b34d4f9d260977f64f4b7850f78ae533b3b679286099df",
+  "mapping_sha256": "12fa5cfa4b4a3e023b3e020eb1de994b66a529d4d45caaac59950df7888faa02"
+}

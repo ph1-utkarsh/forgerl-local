@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "Repair youtube_dl/utils.py. Unary boolean filters are wrong: a positive key must reject False, while !key must accept False and missing values. Replace the exact buggy block:\n    UNARY_OPERATORS = {\n        '': lambda v: v is not None,\n        '!': lambda v: v is None,\n    }"
+  },
+  {
+    "role": "assistant",
+    "content": "{\"action\":\"replace\",\"old\":\"    UNARY_OPERATORS = {\\n        '': lambda v: v is not None,\\n        '!': lambda v: v is None,\\n    }\\n\",\"new\":\"    UNARY_OPERATORS = {\\n        '': lambda v: (v is True) if isinstance(v, bool) else (v is not None),\\n        '!': lambda v: (v is False) if isinstance(v, bool) else (v is None),\\n    }\\n\"}"
+  }
+]

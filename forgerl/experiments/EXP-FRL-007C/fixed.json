@@ -1,0 +1,7 @@
+{
+  "commit": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "/repo/youtube_dl/extractor/motherless.py:123: SyntaxWarning: invalid escape sequence '\\.'\n  _VALID_URL = 'https?://(?:www\\.)?motherless\\.com/gv?/(?P<id>[a-z0-9_]+)'\n/repo/youtube_dl/extractor/pandatv.py:39: SyntaxWarning: \"is not\" with 'int' literal. Did you mean \"!=\"?\n  if error_code is not 0:\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n",
+  "seconds": 1.2384937500000002
+}

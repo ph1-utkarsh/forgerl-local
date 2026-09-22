@@ -1,0 +1,12 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "mlx_version": "0.32.2",
+  "metal_available": true,
+  "paid_spend": 0,
+  "interpretation": "autodiff smoke test only; no LLM weights trained",
+  "loss_before": 18.666667938232422,
+  "loss_after": 6.472156383097172e-05,
+  "weight": 1.9962759017944336,
+  "seconds": 0.06036262499401346,
+  "passed": true
+}

@@ -1,0 +1,16 @@
+{
+  "task": "csv",
+  "seed": 0,
+  "original_artifact_sha256": "26d515cdfc26bacf1454a47ae3aa0fda5a34e018f362157c9fafede43f9a0404",
+  "original_success": false,
+  "hidden": {
+    "passed": false,
+    "checks_passed": 1,
+    "checks_total": 3,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": [\"\\\"a,b\", \"c\"], \"mutated\": false, \"alias\": false}, {\"value\": [\"a\", \"\", \"c\"], \"mutated\": false, \"alias\": false}, {\"value\": [\"\\\"a\\\"b\", \"c\"], \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.2602821249999999
+  },
+  "success": false
+}

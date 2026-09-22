@@ -1,0 +1,8 @@
+{
+  "attempted": 18,
+  "successful": 3,
+  "changed_outcomes": 0,
+  "image": "sha256:229a2c5bfa27522db7815ea81f9bed70af17ccb9de9fc7ad142b1877b5830d36",
+  "model_calls": 0,
+  "grader_sha256": "bc612474d8106540906332eb99880133c8886994ea22677a64987b1ce55c0c96"
+}

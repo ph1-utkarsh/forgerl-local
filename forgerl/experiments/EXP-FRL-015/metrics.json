@@ -1,0 +1,56 @@
+{
+  "rows": [
+    {
+      "condition": "base",
+      "task": "youtube-dl",
+      "split": "train",
+      "response": "{\n  \"action\": \"replace\",\n  \"old\": \"    UNARY_OPERATORS = {\\n        '': lambda v: v is not None,\\n        '!': lambda v: v is None,\\n    }\",\n  \"new\": \"    UNARY_OPERATORS = {\\n        '': lambda v: v is not None,\\n        '!': lambda v: v is None,\\n    }\"\n}",
+      "valid_json_action": true,
+      "exact_repair": false
+    },
+    {
+      "condition": "base",
+      "task": "tornado",
+      "split": "development",
+      "response": "{\n  \"action\": \"replace\",\n  \"old\": \"self._next_timeout += (math.floor((current_time - self._next_timeout) / callback_time_sec) + 1) * callback_time_sec\",\n  \"new\": \"self._next_timeout = max(self._next_timeout, current_time + callback_time_sec)\"\n}",
+      "valid_json_action": true,
+      "exact_repair": false
+    },
+    {
+      "condition": "base",
+      "task": "PySnooper",
+      "split": "test",
+      "response": "{\n  \"action\": \"replace\",\n  \"old\": \"            with open(output_path, 'a') as output_file:\",\n  \"new\": \"            with open(output_path, 'a') as output_file:\"\n}",
+      "valid_json_action": true,
+      "exact_repair": false
+    },
+    {
+      "condition": "adapter",
+      "task": "youtube-dl",
+      "split": "train",
+      "response": "{\n  \"action\": \"replace\",\n  \"old\": \"    UNARY_OPERATORS = {\n        '': lambda ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( (",
+      "valid_json_action": false,
+      "exact_repair": false
+    },
+    {
+      "condition": "adapter",
+      "task": "tornado",
+      "split": "development",
+      "response": "{\n  \"action\": \"replace\",\n  \"old\": \"self._next_timeout += (math.floor((current_time - self._next_timeout) / (callback_time_sec) + 1) * callback_time_sec)\",\n  \"new\": \"self._next_timeout += (math.floor((current_time - self._next_timeout) / callback_time_sec) + 1) * callback_time_sec\"\n}",
+      "valid_json_action": true,
+      "exact_repair": false
+    },
+    {
+      "condition": "adapter",
+      "task": "PySnooper",
+      "split": "test",
+      "response": "{\n  \"action\": \"replace\",\n  \"old\": \"            with open(output_path, 'a') as output_file:\",\n  \"new\": \"            with open(output_path, 'a') as output_file:\"\n}",
+      "valid_json_action": true,
+      "exact_repair": false
+    }
+  ],
+  "base_exact": 0,
+  "adapter_exact": 0,
+  "paid_spend": 0,
+  "interpretation": "three-task exact-block pilot; one task per split is underpowered"
+}

@@ -1,0 +1,22 @@
+{
+  "task": "ledger",
+  "buggy": {
+    "passed": false,
+    "checks_passed": 1,
+    "checks_total": 4,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"raises\": \"ValueError\", \"mutated\": false}, {\"raises\": \"ValueError\", \"mutated\": false}, {\"value\": 11, \"mutated\": false, \"alias\": false}, {\"raises\": \"ValueError\", \"mutated\": false}]\n",
+    "seconds": 0.2616412910000001
+  },
+  "oracle": {
+    "passed": true,
+    "checks_passed": 5,
+    "checks_total": 5,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": 7, \"mutated\": false, \"alias\": false}, {\"value\": 0, \"mutated\": false, \"alias\": false}, {\"value\": 0, \"mutated\": false, \"alias\": false}, {\"raises\": \"ValueError\", \"mutated\": false}, {\"raises\": \"ValueError\", \"mutated\": false}]\n",
+    "seconds": 0.2649135420000004
+  },
+  "success": true
+}

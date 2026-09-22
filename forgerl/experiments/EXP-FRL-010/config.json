@@ -1,0 +1,19 @@
+{
+  "purpose": "real-repository environment and oracle qualification only",
+  "dataset": "BugsInPy",
+  "project": "PySnooper",
+  "bug_id": 3,
+  "source_url": "https://github.com/cool-RR/PySnooper",
+  "buggy_commit": "6e3d797be3fa0a746fb5b1b7c7fea78eb926c208",
+  "fixed_commit": "15555ed760000b049aff8fecc79d29339c1224c3",
+  "test": "tests/test_pysnooper.py::test_file_output",
+  "frozen_test_sha256": "852e76799d5a97d2e8e87d0db6b5e6fd7884fbff6fbe2049734c268bd8c7c753",
+  "license": "MIT",
+  "license_sha256": "0c4250d2a9f0e39d024593ede44eb5044e5fbd1175a8962ec9659d8ace34de9e",
+  "upstream_patch_sha256": "22dc9cc194e688acd03cd86787b0de776f887c76c0251b5368b99079e1cfbd60",
+  "image": "forgerl-pysnooper:py38",
+  "image_id": "sha256:c1f714aa36d9ffcb76880cb9923f5756f2ae8741210df9d75ef468f2c24061ab",
+  "network": "none",
+  "paid_spend": 0,
+  "dependency_image_dockerfile": "forgerl/docker/pysnooper-py38.Dockerfile"
+}

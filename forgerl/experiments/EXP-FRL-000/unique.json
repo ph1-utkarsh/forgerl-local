@@ -1,0 +1,18 @@
+{
+  "task": "unique",
+  "buggy": {
+    "passed": false,
+    "returncode": 1,
+    "reason": null,
+    "output": "Traceback (most recent call last):\n  File \"/work/grade.py\", line 2, in <module>\n    assert unique([[2], [1], [2]]) == [[2], [1]]\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/work/solution.py\", line 2, in unique\n    return list(set(items))\n                ^^^^^^^^^^\nTypeError: unhashable type: 'list'\n",
+    "seconds": 0.2310918329999999
+  },
+  "oracle": {
+    "passed": true,
+    "returncode": 0,
+    "reason": null,
+    "output": "",
+    "seconds": 0.23909491700000007
+  },
+  "success": true
+}

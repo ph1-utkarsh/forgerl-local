@@ -1,0 +1,67 @@
+{
+  "question": "Reply with exactly the number: 2+2.",
+  "prompt": "<|im_start|>user\nReply with exactly the number: 2+2.<|im_end|>\n<|im_start|>assistant\n",
+  "ollama": {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "created_at": "2026-09-20T15:31:44.190176Z",
+    "response": "4",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1478505125,
+    "load_duration": 1344590458,
+    "prompt_eval_count": 19,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 105833000,
+    "eval_count": 2,
+    "eval_duration": 25271000,
+    "logprobs": [
+      {
+        "token": "4",
+        "logprob": -4.887592695013154e-06,
+        "bytes": [
+          52
+        ],
+        "top_logprobs": [
+          {
+            "token": "4",
+            "logprob": -4.887592695013154e-06,
+            "bytes": [
+              52
+            ]
+          },
+          {
+            "token": "2",
+            "logprob": -12.228840827941895,
+            "bytes": [
+              50
+            ]
+          },
+          {
+            "token": "3",
+            "logprob": -20.58858871459961,
+            "bytes": [
+              51
+            ]
+          },
+          {
+            "token": "5",
+            "logprob": -20.591413497924805,
+            "bytes": [
+              53
+            ]
+          },
+          {
+            "token": "6",
+            "logprob": -21.54329490661621,
+            "bytes": [
+              54
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mlx": "4",
+  "mlx_seconds": 2.672962374985218,
+  "exact_text_match": true
+}

@@ -1,0 +1,22 @@
+{
+  "task": "intervals",
+  "buggy": {
+    "passed": false,
+    "checks_passed": 1,
+    "checks_total": 3,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": true, \"mutated\": false, \"alias\": false}, {\"value\": true, \"mutated\": false, \"alias\": false}, {\"value\": true, \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.27221074999999995
+  },
+  "oracle": {
+    "passed": true,
+    "checks_passed": 5,
+    "checks_total": 5,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": true, \"mutated\": false, \"alias\": false}, {\"value\": false, \"mutated\": false, \"alias\": false}, {\"value\": false, \"mutated\": false, \"alias\": false}, {\"value\": false, \"mutated\": false, \"alias\": false}, {\"value\": true, \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.26645795799999994
+  },
+  "success": true
+}

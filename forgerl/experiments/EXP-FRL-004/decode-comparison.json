@@ -1,0 +1,127 @@
+[
+  {
+    "name": "blk.0.attn_k.weight",
+    "quant": "Q4_K",
+    "shape": [
+      2,
+      2560
+    ],
+    "max_abs_error": 0.0709228515625,
+    "rms_error": 0.01221836544573307
+  },
+  {
+    "name": "blk.0.attn_k_norm.weight",
+    "quant": "F32",
+    "shape": [
+      128
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  },
+  {
+    "name": "blk.0.attn_norm.weight",
+    "quant": "F32",
+    "shape": [
+      2560
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  },
+  {
+    "name": "blk.0.attn_output.weight",
+    "quant": "Q4_K",
+    "shape": [
+      2,
+      4096
+    ],
+    "max_abs_error": 0.45539093017578125,
+    "rms_error": 0.045837659388780594
+  },
+  {
+    "name": "blk.0.attn_q.weight",
+    "quant": "Q4_K",
+    "shape": [
+      2,
+      2560
+    ],
+    "max_abs_error": 0.026397705078125,
+    "rms_error": 0.004509385209530592
+  },
+  {
+    "name": "blk.0.attn_q_norm.weight",
+    "quant": "F32",
+    "shape": [
+      128
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  },
+  {
+    "name": "blk.0.attn_v.weight",
+    "quant": "Q6_K",
+    "shape": [
+      2,
+      2560
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  },
+  {
+    "name": "blk.0.ffn_down.weight",
+    "quant": "Q6_K",
+    "shape": [
+      2,
+      9728
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  },
+  {
+    "name": "blk.0.ffn_gate.weight",
+    "quant": "Q4_K",
+    "shape": [
+      2,
+      2560
+    ],
+    "max_abs_error": 0.037139892578125,
+    "rms_error": 0.007740764878690243
+  },
+  {
+    "name": "blk.0.ffn_norm.weight",
+    "quant": "F32",
+    "shape": [
+      2560
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  },
+  {
+    "name": "blk.0.ffn_up.weight",
+    "quant": "Q4_K",
+    "shape": [
+      2,
+      2560
+    ],
+    "max_abs_error": 0.044158935546875,
+    "rms_error": 0.007592801004648209
+  },
+  {
+    "name": "output_norm.weight",
+    "quant": "F32",
+    "shape": [
+      2560
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  },
+  {
+    "name": "token_embd.weight",
+    "quant": "Q6_K",
+    "shape": [
+      2,
+      2560
+    ],
+    "max_abs_error": 0.0,
+    "rms_error": 0.0
+  }
+]

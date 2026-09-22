@@ -1,0 +1,19 @@
+{
+  "dataset": "BugsInPy",
+  "project": "youtube-dl",
+  "bug_id": 1,
+  "source_url": "https://github.com/ytdl-org/youtube-dl",
+  "buggy_commit": "99036a1298089068dcf80c0985bfcc3f8c24f281",
+  "fixed_commit": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+  "test": "test.test_utils.TestUtil.test_match_str",
+  "image": "python:3.12-slim",
+  "image_id": "sha256:229a2c5bfa27522db7815ea81f9bed70af17ccb9de9fc7ad142b1877b5830d36",
+  "network": "none",
+  "license": "Unlicense",
+  "license_sha256": "7e12e5df4bae12cb21581ba157ced20e1986a0508dd10d0e8a4ab9a4cf94e85c",
+  "upstream_patch_sha256": "612373e61e65e2aebb3554b5a030db965592376280d0c51afb74a349bec1f437",
+  "paid_spend": 0,
+  "frozen_test_source": "1cc47c667419e0eadc0a6989256ab7b276852adf:test/test_utils.py",
+  "frozen_test_sha256": "9f89df328fda10e6249c7fd89d85f62eec7888508c6c1e5c5fc7aefe44949054",
+  "purpose": "real-repository environment and oracle qualification only"
+}

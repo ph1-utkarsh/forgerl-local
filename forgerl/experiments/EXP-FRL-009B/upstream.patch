@@ -1,0 +1,73 @@
+diff --git a/tornado/ioloop.py b/tornado/ioloop.py
+index 45d2d223..48700139 100644
+--- a/tornado/ioloop.py
++++ b/tornado/ioloop.py
+@@ -1217,7 +1217,27 @@ class PeriodicCallback(object):
+             self._timeout = self.io_loop.add_timeout(self._next_timeout, self._run)
+ 
+     def _update_next(self, current_time):
++        callback_time_sec = self.callback_time / 1000.0
+         if self._next_timeout <= current_time:
+-            callback_time_sec = self.callback_time / 1000.0
++            # The period should be measured from the start of one call
++            # to the start of the next. If one call takes too long,
++            # skip cycles to get back to a multiple of the original
++            # schedule.
+             self._next_timeout += (math.floor((current_time - self._next_timeout) /
+                                               callback_time_sec) + 1) * callback_time_sec
++        else:
++            # If the clock moved backwards, ensure we advance the next
++            # timeout instead of recomputing the same value again.
++            # This may result in long gaps between callbacks if the
++            # clock jumps backwards by a lot, but the far more common
++            # scenario is a small NTP adjustment that should just be
++            # ignored.
++            #
++            # Note that on some systems if time.time() runs slower
++            # than time.monotonic() (most common on windows), we
++            # effectively experience a small backwards time jump on
++            # every iteration because PeriodicCallback uses
++            # time.time() while asyncio schedules callbacks using
++            # time.monotonic().
++            # https://github.com/tornadoweb/tornado/issues/2333
++            self._next_timeout += callback_time_sec
+diff --git a/tornado/test/ioloop_test.py b/tornado/test/ioloop_test.py
+index a165ce71..9f7c1847 100644
+--- a/tornado/test/ioloop_test.py
++++ b/tornado/test/ioloop_test.py
+@@ -793,8 +793,10 @@ class TestPeriodicCallbackMath(unittest.TestCase):
+     def simulate_calls(self, pc, durations):
+         """Simulate a series of calls to the PeriodicCallback.
+ 
+-        Pass a list of call durations in seconds. This method
+-        returns the times at which each call would be made.
++        Pass a list of call durations in seconds (negative values
++        work to simulate clock adjustments during the call, or more or
++        less equivalently, between calls). This method returns the
++        times at which each call would be made.
+         """
+         calls = []
+         now = 1000
+@@ -826,6 +828,22 @@ class TestPeriodicCallbackMath(unittest.TestCase):
+         self.assertEqual(self.simulate_calls(pc, call_durations),
+                          expected)
+ 
++    def test_clock_backwards(self):
++        pc = PeriodicCallback(None, 10000)
++        # Backwards jumps are ignored, potentially resulting in a
++        # slightly slow schedule (although we assume that when
++        # time.time() and time.monotonic() are different, time.time()
++        # is getting adjusted by NTP and is therefore more accurate)
++        self.assertEqual(self.simulate_calls(pc, [-2, -1, -3, -2, 0]),
++                         [1010, 1020, 1030, 1040, 1050])
++
++        # For big jumps, we should perhaps alter the schedule, but we
++        # don't currently. This trace shows that we run callbacks
++        # every 10s of time.time(), but the first and second calls are
++        # 110s of real time apart because the backwards jump is
++        # ignored.
++        self.assertEqual(self.simulate_calls(pc, [-100, 0, 0]),
++                         [1010, 1020, 1030])
+ 
+ class TestIOLoopConfiguration(unittest.TestCase):
+     def run_python(self, *statements):

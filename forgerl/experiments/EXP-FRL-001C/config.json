@@ -1,0 +1,46 @@
+{
+  "mode": "baseline",
+  "run_id": "EXP-FRL-001C",
+  "seeds": "0,1,2",
+  "limit": 6,
+  "max_steps": 8,
+  "format": "schema",
+  "image": "sha256:229a2c5bfa27522db7815ea81f9bed70af17ccb9de9fc7ad142b1877b5830d36",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_hashes": {
+    "runner.py": "eef7450c90aae57f0806c58b080663cdc3e497ebc7cf019d68d111934d5a80a3",
+    "qualification.py": "6611f9bb33eec62e19b8d83858c1b43826300f45c193560e65df7ace3c252ecf",
+    "cases.py": "f81c46519b07f3f3de7e0b3c1640d7cb6cdcb38ad3d95bc5331c23b1d567b206",
+    "worker.py": "690c2096b175061945fadd346b4313079b0383c6993e1ab95d8e15a0aaee5b76"
+  },
+  "ollama_version": {
+    "version": "0.34.0"
+  },
+  "model_metadata": [
+    {
+      "name": "qwen3:4b-instruct-2507-q4_K_M",
+      "model": "qwen3:4b-instruct-2507-q4_K_M",
+      "modified_at": "2026-09-10T18:39:36.631750024+05:30",
+      "size": 2497293803,
+      "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "4.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2560
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    }
+  ]
+}

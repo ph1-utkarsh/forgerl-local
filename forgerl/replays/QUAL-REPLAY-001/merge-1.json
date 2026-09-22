@@ -1,0 +1,16 @@
+{
+  "task": "merge",
+  "seed": 1,
+  "original_artifact_sha256": "819287e10851e031dddd3a89b61e976418ad1b40c02b86323766e042fab53f0b",
+  "original_success": false,
+  "hidden": {
+    "passed": false,
+    "checks_passed": 0,
+    "checks_total": 1,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": {\"x\": {\"a\": 3}, \"z\": [], \"q\": []}, \"mutated\": false, \"alias\": true}]\n",
+    "seconds": 0.2592643749999999
+  },
+  "success": false
+}

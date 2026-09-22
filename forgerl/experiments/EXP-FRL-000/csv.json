@@ -1,0 +1,18 @@
+{
+  "task": "csv",
+  "buggy": {
+    "passed": false,
+    "returncode": 1,
+    "reason": null,
+    "output": "Traceback (most recent call last):\n  File \"/work/grade.py\", line 2, in <module>\n    assert parse_row('\"a,b\",c')==['a,b','c']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.22270966699999972
+  },
+  "oracle": {
+    "passed": true,
+    "returncode": 0,
+    "reason": null,
+    "output": "",
+    "seconds": 0.27047254099999973
+  },
+  "success": true
+}

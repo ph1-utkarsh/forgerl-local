@@ -1,0 +1,18 @@
+{
+  "task": "chunks",
+  "buggy": {
+    "passed": false,
+    "returncode": 1,
+    "reason": null,
+    "output": "Traceback (most recent call last):\n  File \"/work/grade.py\", line 2, in <module>\n    assert chunks([1,2,3],2)==[[1,2],[3]]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "seconds": 0.22237025
+  },
+  "oracle": {
+    "passed": true,
+    "returncode": 0,
+    "reason": null,
+    "output": "",
+    "seconds": 0.218965042
+  },
+  "success": true
+}

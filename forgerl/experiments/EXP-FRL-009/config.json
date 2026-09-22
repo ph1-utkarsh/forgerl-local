@@ -1,0 +1,19 @@
+{
+  "purpose": "real-repository environment and oracle qualification only",
+  "dataset": "BugsInPy",
+  "project": "tornado",
+  "bug_id": 5,
+  "source_url": "https://github.com/tornadoweb/tornado",
+  "buggy_commit": "2d4053daa56c609d642b214399e046671d4a593e",
+  "fixed_commit": "886643965b5cb782503d8d7b374b7a794ec2077b",
+  "test": "tornado.test.ioloop_test.TestPeriodicCallbackMath.test_clock_backwards",
+  "frozen_test_source": "886643965b5cb782503d8d7b374b7a794ec2077b:tornado/test/ioloop_test.py",
+  "frozen_test_sha256": "ed18d9df5aaaac8794a1a6755739a1202d05bd7cc073de12fb9abca7e2c61b14",
+  "license": "Apache-2.0",
+  "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "upstream_patch_sha256": "7a38aed2e9884b8f0a7c69cc916338b3a83ad9afa3d9c091678632f319289477",
+  "image": "python:3.8-slim",
+  "image_id": "sha256:1d52838af602b4b5a831beb13a0e4d073280665ea7be7f69ce2382f29c5a613f",
+  "network": "none",
+  "paid_spend": 0
+}

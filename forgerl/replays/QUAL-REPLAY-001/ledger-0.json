@@ -1,0 +1,16 @@
+{
+  "task": "ledger",
+  "seed": 0,
+  "original_artifact_sha256": "20bd4d82df436834eb8308e25bd2045065fb838e4a03bd84b14a336ca2c145aa",
+  "original_success": false,
+  "hidden": {
+    "passed": false,
+    "checks_passed": 2,
+    "checks_total": 4,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"raises\": \"ValueError\", \"mutated\": false}, {\"raises\": \"ValueError\", \"mutated\": false}, {\"raises\": \"ValueError\", \"mutated\": false}, {\"raises\": \"ValueError\", \"mutated\": false}]\n",
+    "seconds": 0.2659516249999996
+  },
+  "success": false
+}

@@ -1,0 +1,12 @@
+{
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "buggy_commit": "99036a1298089068dcf80c0985bfcc3f8c24f281",
+  "fixed_commit": "1cc47c667419e0eadc0a6989256ab7b276852adf",
+  "target": "youtube_dl/utils.py",
+  "frozen_test_sha256": "9f89df328fda10e6249c7fd89d85f62eec7888508c6c1e5c5fc7aefe44949054",
+  "image_id": "sha256:229a2c5bfa27522db7815ea81f9bed70af17ccb9de9fc7ad142b1877b5830d36",
+  "seeds": "0,1,2",
+  "max_steps": 8,
+  "paid_spend": 0,
+  "cohort": "real-repository feasibility; not held-out research evaluation"
+}

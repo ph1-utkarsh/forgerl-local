@@ -1,0 +1,16 @@
+{
+  "task": "intervals",
+  "seed": 1,
+  "original_artifact_sha256": "7ac293df16b2d79842b457c95c7f19395d282d07fcc5cc0ce26af02d95b9c753",
+  "original_success": true,
+  "hidden": {
+    "passed": true,
+    "checks_passed": 3,
+    "checks_total": 3,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": false, \"mutated\": false, \"alias\": false}, {\"value\": false, \"mutated\": false, \"alias\": false}, {\"value\": true, \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.2774414160000003
+  },
+  "success": true
+}

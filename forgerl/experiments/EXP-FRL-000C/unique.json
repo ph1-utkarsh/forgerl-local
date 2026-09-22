@@ -1,0 +1,22 @@
+{
+  "task": "unique",
+  "buggy": {
+    "passed": false,
+    "checks_passed": 0,
+    "checks_total": 2,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"raises\": \"TypeError\", \"mutated\": false}, {\"value\": [1, 2, 3], \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.275602833
+  },
+  "oracle": {
+    "passed": true,
+    "checks_passed": 4,
+    "checks_total": 4,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": [1], \"mutated\": false, \"alias\": false}, {\"value\": [], \"mutated\": false, \"alias\": false}, {\"value\": [[2], [1]], \"mutated\": false, \"alias\": true}, {\"value\": [3, 1, 2], \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.27066900000000005
+  },
+  "success": true
+}

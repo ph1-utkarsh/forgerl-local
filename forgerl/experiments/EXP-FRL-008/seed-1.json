@@ -1,0 +1,210 @@
+{
+  "seed": 1,
+  "finished": false,
+  "success": false,
+  "grade": {
+    "passed": false,
+    "returncode": 1,
+    "reason": null,
+    "output": "/repo/youtube_dl/extractor/motherless.py:123: SyntaxWarning: invalid escape sequence '\\.'\n  _VALID_URL = 'https?://(?:www\\.)?motherless\\.com/gv?/(?P<id>[a-z0-9_]+)'\n/repo/youtube_dl/extractor/pandatv.py:39: SyntaxWarning: \"is not\" with 'int' literal. Did you mean \"!=\"?\n  if error_code is not 0:\n======================================================================\nFAIL: test_match_str (test.test_utils.TestUtil.test_match_str)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/repo/test/test_utils.py\", line 1076, in test_match_str\n    self.assertFalse(match_str('is_live', {'is_live': False}))\nAssertionError: True is not false\n\n----------------------------------------------------------------------\nRan 1 test in 0.002s\n\nFAILED (failures=1)\n",
+    "seconds": 1.3708230410000013
+  },
+  "source_sha256": "8a7b4c4048bebe23a7d0d5ab76bc66619e9fba52ec43ae5de8d08d4486aefdc2",
+  "matches_upstream": false,
+  "trace": [
+    {
+      "step": 0,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:29:48.201186Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"action\": \"replace\",\n  \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\",\n  \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2722185625,
+        "load_duration": 3642375,
+        "prompt_eval_count": 133,
+        "prompt_eval_cached_count": 132,
+        "prompt_eval_duration": 44273000,
+        "eval_count": 112,
+        "eval_duration": 2573965000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    },
+    {
+      "step": 1,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:29:50.889572Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"action\": \"replace\",\n  \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\",\n  \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2684023625,
+        "load_duration": 1219166,
+        "prompt_eval_count": 274,
+        "prompt_eval_cached_count": 244,
+        "prompt_eval_duration": 95489000,
+        "eval_count": 112,
+        "eval_duration": 2574308000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    },
+    {
+      "step": 2,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:29:53.466339Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"action\": \"replace\", \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\", \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2575098875,
+        "load_duration": 1339000,
+        "prompt_eval_count": 415,
+        "prompt_eval_cached_count": 385,
+        "prompt_eval_duration": 94970000,
+        "eval_count": 107,
+        "eval_duration": 2464184000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    },
+    {
+      "step": 3,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:29:56.05231Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"action\": \"replace\", \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\", \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2584318750,
+        "load_duration": 1215250,
+        "prompt_eval_count": 551,
+        "prompt_eval_cached_count": 521,
+        "prompt_eval_duration": 97254000,
+        "eval_count": 107,
+        "eval_duration": 2472405000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    },
+    {
+      "step": 4,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:29:58.651067Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"action\": \"replace\", \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\", \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2595406542,
+        "load_duration": 1147958,
+        "prompt_eval_count": 687,
+        "prompt_eval_cached_count": 657,
+        "prompt_eval_duration": 97313000,
+        "eval_count": 107,
+        "eval_duration": 2480208000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    },
+    {
+      "step": 5,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:30:01.267656Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"action\": \"replace\", \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\", \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2613467709,
+        "load_duration": 1435334,
+        "prompt_eval_count": 823,
+        "prompt_eval_cached_count": 793,
+        "prompt_eval_duration": 99150000,
+        "eval_count": 107,
+        "eval_duration": 2496307000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    },
+    {
+      "step": 6,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:30:03.935576Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"action\": \"replace\", \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\", \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2666428792,
+        "load_duration": 1077834,
+        "prompt_eval_count": 959,
+        "prompt_eval_cached_count": 929,
+        "prompt_eval_duration": 105543000,
+        "eval_count": 107,
+        "eval_duration": 2541814000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    },
+    {
+      "step": 7,
+      "response": {
+        "model": "qwen3:4b-instruct-2507-q4_K_M",
+        "created_at": "2026-09-21T06:30:06.599144Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\"action\": \"replace\", \"new\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is False\\n    return value is True\", \"old\": \"def _bool_filter(key, value):\\n    if key is None:\\n        return True\\n    if key == '!' or key == 'not':\\n        return value is True\\n    return value is False\"}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2661904584,
+        "load_duration": 1090375,
+        "prompt_eval_count": 1095,
+        "prompt_eval_cached_count": 1065,
+        "prompt_eval_duration": 101840000,
+        "eval_count": 107,
+        "eval_duration": 2541665000
+      },
+      "observation": {
+        "error": "old must identify exactly one substring; replacement <=12000 bytes"
+      },
+      "valid": false
+    }
+  ],
+  "prompt_tokens": 4937,
+  "output_tokens": 866
+}

@@ -1,0 +1,22 @@
+{
+  "task": "csv",
+  "buggy": {
+    "passed": false,
+    "checks_passed": 1,
+    "checks_total": 3,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": [\"\\\"a\", \"b\\\"\", \"c\"], \"mutated\": false, \"alias\": false}, {\"value\": [\"a\", \"\", \"c\"], \"mutated\": false, \"alias\": false}, {\"value\": [\"\\\"a\\\"\\\"b\\\"\", \"c\"], \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.32100245800000016
+  },
+  "oracle": {
+    "passed": true,
+    "checks_passed": 4,
+    "checks_total": 4,
+    "returncode": 0,
+    "reason": null,
+    "output": "[{\"value\": [\"a\", \"b\"], \"mutated\": false, \"alias\": false}, {\"value\": [\"a,b\", \"c\"], \"mutated\": false, \"alias\": false}, {\"value\": [\"a\", \"\", \"c\"], \"mutated\": false, \"alias\": false}, {\"value\": [\"a\\\"b\", \"c\"], \"mutated\": false, \"alias\": false}]\n",
+    "seconds": 0.3333354580000001
+  },
+  "success": true
+}
