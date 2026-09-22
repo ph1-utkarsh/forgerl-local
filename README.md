@@ -1,5 +1,7 @@
 # ForgeRL
 
+[![tests](https://github.com/ph1-utkarsh/forgerl-local/actions/workflows/tests.yml/badge.svg)](https://github.com/ph1-utkarsh/forgerl-local/actions/workflows/tests.yml) [![license: MIT](https://img.shields.io/badge/license-MIT-c9ff3d.svg)](LICENSE)
+
 **Failure-driven post-training for repository repair, built and measured locally.**
 
 ForgeRL is an evidence-first coding-agent research system. It combines constrained JSON actions, network-disabled Docker execution, host-held semantic graders, replayable trajectories, a corrected GGUF-to-MLX loader, and real LoRA updates using SFT, DPO, and a verifier-reward GRPO surrogate.
